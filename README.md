@@ -1,4 +1,4 @@
 # Naval-Creed-Mod-Maker
-Brand new Naval Creed Mod Maker is on Alpha for testing Captain Voice creating feature
+Brand new Naval Creed Mod Maker is on Alpha for testing Captain Voice creating feature\n
 Alpha V1.0:
-  Public alpha test for Testing Captain Voice creating feature
+Public alpha test for Testing Captain Voice creating feature
