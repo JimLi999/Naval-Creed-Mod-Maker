@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">战舰联盟MOD制作器</string>
+    <string name="title_captain_voice_create">舰长语音</string>
+    <string name="get_project_name">输入专案名称(若专案存在将直接开启)</string>
+    <string name="project_name">专案：</string>
+    <string name="des_Autopilot">Autopilot：自动巡航 开启(Enabled),关闭(Disabled)或结束(End)</string>
+    <string name="choose_project">选择专案</string>
+    <string name="des_Battlestart">Battlestart：战斗开始</string>
+    <string name="des_CriticalFlooding">CriticalFlooding：发生进水</string>
+    <string name="des_Detection">Detection：被发现(Self)或发现敌人(Enemy)</string>
+    <string name="des_Cons">Cons：消耗品启用或进入冷却 &lt;br>-AAActive：启用防空弹幕 &lt;br>-AAEnd：防空弹幕进入冷却 &lt;br>-EngineBoostActive：启用引擎增压 &lt;br>-EngineBoostActive_Shima：在岛风上启用引擎增压 &lt;br>-EngineBoostEnd：引擎增压进入冷却 &lt;br>-FrontierActive：启用前线基地 -日系航母消耗品 &lt;br>-FrontierEnd：前线基地进入冷却 -日系航母消耗品 &lt;br>-ProblemSolved_Fire：启用损管 -起火 &lt;br>-ProblemSolved_Flood：启用损管 -进水 &lt;br>-SmokeActive：启用烟雾发烟机 &lt;br>-SmokeEnd：烟雾发烟机进入冷却</string>
+    <string name="des_Domination">Domination：点位状态,点数状态 &lt;br>-Ally_Capture：我方已占领一处关键点&lt;br>-Ally_NearWin：我方点数抵达800 &lt;br>-Enemy_Capture：敌方已占领一处关键点 &lt;br>-Enemy_NearWin：敌方点数抵达800</string>
+    <string name="des_DoubleKill">DoubleKill：一炮双响</string>
+    <string name="des_Fire">Fire：船只起火</string>
+    <string name="des_FriendlyHit">FriendlyHit：击中友方船只</string>
+    <string name="des_FirstKill">FirstKill：第一滴血</string>
+    <string name="des_HitAndKill">"HitAndKill：击沉或命中  &lt;br>-DestroyAlly：击沉友方舰艇 &lt;br>&#8212;AirCarrier：击沉友方航空母舰 &lt;br>&#8212;Battleship：击沉友方战列舰 &lt;br>&#8212;Cruiser：击沉友方巡洋舰 &lt;br>&#8212;Destroyer：击沉友方驱逐舰 &lt;br>-DestroyEnemy：击沉敌方舰艇  &lt;br>&#8212;AirCarrier：击沉敌方航空母舰 &lt;br>&#8212;Battleship：击沉敌方战列舰 &lt;br>&#8212;Cruiser：击沉敌方巡洋舰 &lt;br>&#8212;Destroyer：击沉敌方驱逐舰 &lt;br>-GoodHit：命中核心区或鱼雷命中 "</string>
+    <string name="des_LastHope">LastHope：友方最后一艘船只(song_bi)</string>
+    <string name="des_ModuleDisable">"ModuleDisable：部件被击毁或暂停运作 &lt;br>-Engine：动力部暂停运作 &lt;br>-MainGun：主炮被击毁或暂停运作 &lt;br>&#8212;Crit：主炮暂停运作 &lt;br>&#8212;Die：主炮被击毁 &lt;br>-StearingGear：舵机暂停运作 &lt;br>-TorpedoTube：鱼雷发射管被击毁或暂停运作 "</string>
+    <string name="des_PlaneGroupId">PlaneGroupId：机组编号&lt;br>-DiveBomber：轰炸机机组 &lt;br>-Fighter：战斗机机组 &lt;br>-TorpedoBomber：鱼雷机机组</string>
+    <string name="des_PlaneState">PlaneState：机组状态         &lt;br>-DiveBomber：轰炸机机组         &lt;br>-Fighter：战斗机机组         &lt;br>-TorpedoBomber：鱼雷机机组         &lt;br>&#8212;AirBorne：机组起飞         &lt;br>&#8212;AtPos：机组已达指定位置并等待指示         &lt;br>&#8212;Destroy：机组已被击落         &lt;br>&#8212;Engage：机组正与敌方交战中         &lt;br>&#8212;Land：机组返回舰艇         &lt;br>&#8212;Ready：机组已准备完毕         &lt;br>&#8212;TangoDown：机组击落敌方飞机         &lt;br>&#8212;UnderAttack：机组正在遭受攻击</string>
+    <string name="des_TeamKillPunishment">TeamKillPunishment：误击队友导致严重损害或沉没而被施予惩罚(fen zuan gui zu)</string>
+    <string name="apply">应用</string>
+    <string name="select">选择</string>
+    <string name="file_uri">文件 Uri：</string>
+    <string name="file_name">文件名称：</string>
+    <string name="file_size">文件大小：</string>
+    <string name="get_Permissions_title">权限请求</string>
+    <string name="get_Permissions_info">权限请求:读取,写入和管理您的手机存储空间(管理权限为删除专案时使用,目前不支援可移除式存储装置)</string>
+    <string name="OK">好</string>
+    <string name="accept">允许</string>
+    <string name="deny">拒绝</string>
+    <string name="get_Exception_title">糟糕!!</string>
+    <string name="get_Exception_info_head">噢不,我们出了点问题</string>
+    <string name="get_Exception_info_feet">请截图并传送给开发者 email:jam9112229@gmail.com QQ:2210744008(请注明bug反馈)</string>
+    <string name="Build">打包MOD包</string>
+    <string name="author">作者：</string>
+    <string name="project_type">专案类型：</string>
+    <string name="mod_pack_name">Mod包名称：</string>
+    <string name="mod_info">Mod简介：</string>
+    <string name="mod_version">Mod版本：如果您需要使用mod助手的mod更新功能,请确定此版本高于您先前mod的版本</string>
+    <string name="preview">Mod预览图(可选)：</string>
+    <string name="delete_project_after_build">在打包完成后移除专案</string>
+    <string name="Err_01">Err:01 未输入专案名称或输入空白字元</string>
+    <string name="Err_02">Err:02 未输入Mod名称/Mod作者/Mod简介/Mod版本</string>
+    <string name="Success">成功</string>
+    <string name="running">处理中…</string>
+    <string name="Yes">是</string>
+    <string name="Wait">等等</string>
+    <string name="get_exit_title">离开</string>
+    <string name="get_exit_info">确定吗?</string>
+    <string name="title_gun_sound_create">主音效(炮声相关)</string>
+    <string-array name="GSPath">
+        <item name="AntiAircraft">防空炮</item>
+        <item name="Gunnery">炮声</item>
+        <item name="ShellHit">炮弹击中</item>
+        <item name="TorpedoLaunch">鱼雷发射</item>
+        <item name="TorpedoHit">鱼雷击中</item>
+        <item name="PlaneDive">飞机俯冲</item>
+    </string-array>
+    <string-array name="AAPath">
+        <item name="MediumAndShortRange">中,近程防空</item>
+        <item name="LongRange">远程防空</item>
+    </string-array>
+    <string-array name="GunneryPath">
+        <item name="main">主炮</item>
+        <item name="sec">副炮</item>
+    </string-array>
+    <string-array name="ShellHitPath">
+        <item name="battleship">战列舰</item>
+        <item name="carrier">航空母舰</item>
+        <item name="cruiser">巡洋舰</item>
+        <item name="destroyer">驱逐舰</item>
+        <item name="critical">严重伤害</item>
+        <item name="ocean">海洋</item>
+    </string-array>
+</resources>

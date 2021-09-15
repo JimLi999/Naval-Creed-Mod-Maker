@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">NC Mod Maker</string>
+
+    <string name="choose_project">Choose Project</string>
+    <string name="get_project_name">Enter Project name(Open project when exist)</string>
+    <string name="project_name">Project：</string>
+
+    <string name="file_uri">File Uri：</string>
+    <string name="file_name">File Name：</string>
+    <string name="file_size">File Size：</string>
+
+    <string name="get_Permissions_title">Requiring Permissions</string>
+    <string name="get_Permissions_info">Requiring Permissions to work:read and write your storage(exclude micro SD card)</string>
+
+    <string name="get_exit_title">Exit</string>
+    <string name="get_exit_info">Are you sure about that?</string>
+
+    <string name="get_Exception_title">Oops!!</string>
+    <string name="get_Exception_info_head">oh no,we have some problem</string>
+    <string name="get_Exception_info_feet">take screenshot and report to developer \n email:jam9112229@gmail.com</string>
+
+    <string name="apply">Apply</string>
+    <string name="Success">Success</string>
+    <string name="OK">OK</string>
+    <string name="Yes">Yes</string>
+    <string name="accept">Accept</string>
+    <string name="deny">Deny</string>
+    <string name="Wait">Wait</string>
+    <string name="select">Select</string>
+    <string name="Build">Build mod pack</string>
+
+    <string name="title_captain_voice_create">CaptainVoice</string>
+    <string name="title_gun_sound_create">PrimarySound(GunSound)</string>
+
+    <string name="Err_01">Err:01 No Project Name</string>
+    <string name="Err_02">Err:02 No Pack Name/Author/Info/Version</string>
+
+    <string name="des_Autopilot">Autopilot：when Autopilot is enabled,disabled or end</string>
+    <string name="des_Battlestart">Battlestart：when Battle Start</string>
+    <string name="des_Cons">"Cons：when consumables activate or deactivate
+        &lt;br>-AAActive：when AA activate
+        &lt;br>-AAEnd：when AA deactivate
+        &lt;br>-EngineBoostActive：when EngineBoost activate
+        &lt;br>-EngineBoostActive_Shima：when Shimakaze activate EngineBoost
+        &lt;br>-EngineBoostEnd：when EngineBoost deactivate
+        &lt;br>-FrontierActive：when Frontline Station activate -JP carrier consumables
+        &lt;br>-FrontierEnd：when Frontline Station deactivate -JP carrier consumables
+        &lt;br>-ProblemSolved_Fire：when damage control activate -fire
+        &lt;br>-ProblemSolved_Flood：when EngineBoost activate -flood
+        &lt;br>-SmokeActive：when smoke generator activate
+        &lt;br>-SmokeEnd：when smoke generator deactivate "</string>
+    <string name="des_CriticalFlooding">CriticalFlooding：when flooding</string>
+    <string name="des_Detection">Detection：when being spotted or spot enemy</string>
+    <string name="des_Domination">Domination：domination status,domination point status
+        &lt;br>-Ally_Capture：Ally taken a key point
+        &lt;br>-Ally_NearWin：Ally domination point above 800
+        &lt;br>-Enemy_Capture：Enemy taken a key point
+        &lt;br>-Enemy_NearWin：Enemy domination point above 800</string>
+    <string name="des_DoubleKill">DoubleKill：when double-bang</string>
+    <string name="des_Fire">Fire：when ship on fire</string>
+    <string name="des_FriendlyHit">FriendlyHit：when hit ally</string>
+    <string name="des_FirstKill">FirstKill：First Blood</string>
+    <string name="des_HitAndKill">"HitAndKill：when destroy or good hits
+        &lt;br>-DestroyAlly：Destroy Ally ships
+        &lt;br>&#8212;AirCarrier：Destroy Ally Carrier
+        &lt;br>&#8212;Battleship：Destroy Ally Battleship
+        &lt;br>&#8212;Cruiser：Destroy Ally Cruiser
+        &lt;br>&#8212;Destroyer：Destroy Ally Destroyer
+        &lt;br>-DestroyEnemy：Destroy Enemy ships
+        &lt;br>&#8212;AirCarrier：Destroy Enemy Carrier
+        &lt;br>&#8212;Battleship：Destroy Enemy Battleship
+        &lt;br>&#8212;Cruiser：Destroy Enemy Cruiser
+        &lt;br>&#8212;Destroyer：Destroy Enemy Destroyer
+        &lt;br>-GoodHit：Citadel or torpedo hit "</string>
+    <string name="des_LastHope">LastHope：when being the last one of team</string>
+    <string name="des_ModuleDisable">ModuleDisable：when module been destroyed or disabled
+        &lt;br>-Engine：engine disabled
+        &lt;br>-MainGun：main battery destroyed or disabled
+        &lt;br>&#8212;Crit：main battery disabled
+        &lt;br>&#8212;Die：main battery destroyed
+        &lt;br>-StearingGear：steering gear disabled
+        &lt;br>-TorpedoTube：torpedo tube destroyed or disabled</string>
+    <string name="des_PlaneGroupId">"PlaneGroupId：plane squadron id
+        &lt;br>-DiveBomber：dive bomber squadron
+        &lt;br>-Fighter：fighter squadron
+        &lt;br>-TorpedoBomber：torpedo bomber squadron"</string>
+    <string name="des_PlaneState">PlaneState：squadron status
+        &lt;br>-DiveBomber：dive bomber squadron
+        &lt;br>-Fighter：fighter squadron
+        &lt;br>-TorpedoBomber：torpedo bomber squadron
+        &lt;br>&#8212;AirBorne：squadron take off
+        &lt;br>&#8212;AtPos：squadron is at position and waiting for command
+        &lt;br>&#8212;Destroy：squadron been shot down
+        &lt;br>&#8212;Engage：squadron is engaging enemy
+        &lt;br>&#8212;Land：squadron return to ship
+        &lt;br>&#8212;Ready：squadron is ready for take off
+        &lt;br>&#8212;TangoDown：squadron shot down enemy
+        &lt;br>&#8212;UnderAttack：squadron is under attack</string>
+    <string name="des_TeamKillPunishment">TeamKillPunishment：team kill punishment alert</string>
+
+    <!-->List<-->
+    <string-array name="GSPath">
+        <item name="AntiAircraft">Anti Aircraft</item>
+        <item name="Gunnery">Gunnery</item>
+        <item name="ShellHit">Shell Hit</item>
+        <item name="TorpedoLaunch">Torpedo Launch</item>
+        <item name="TorpedoHit">Torpedo Hit</item>
+        <item name="PlaneDive">Plane Dive</item>
+    </string-array>
+
+    <!-->Anti Aircraft<-->
+    <string-array name="AAPath">
+        <item name="MediumAndShortRange">Medium and ShortRange</item>
+        <item name="LongRange">Long Range</item>
+    </string-array>
+    <string-array name="AAMaSRPath" translatable="false">
+        <item name="slow">firerate_slow.wav</item>
+        <item name="fast">firerate_fast.wav</item>
+        <item name="faster">firerate_faster.wav</item>
+        <item name="fastest">firerate_fastest.wav</item>
+    </string-array>
+    <string-array name="AALRPath" translatable="false">
+        <item name="antiairgun">antiairgun.wav</item>
+    </string-array>
+
+    <!-->Gunnery<-->
+    <string-array name="GunneryPath">
+        <item name="main">Main Battery</item>
+        <item name="sec">Secondary</item>
+    </string-array>
+    <string-array name="Gunnery_Main_Caliber" translatable="false">
+        <item name="120mmIJN">120mmIJN.wav</item>
+        <item name="127mmIJN">127mmIJN.wav</item>
+        <item name="127mmUSN">127mmUSN.wav</item>
+        <item name="140mmIJN">140mmIJN.wav</item>
+        <item name="152mmIJN">152mmIJN.wav</item>
+        <item name="152mmUSN">152mmUSN.wav</item>
+        <item name="155mmIJN">155mmIJN.wav</item>
+        <item name="203mmIJN">203mmIJN.wav</item>
+        <item name="203mmUSN">203mmUSN.wav</item>
+        <item name="356mmALL">356mmALL.wav</item>
+        <item name="406mmUSN">406mmUSN.wav</item>
+        <item name="410mmALL">410mmALL.wav</item>
+        <item name="460mmIJN">460mmIJN.wav</item>
+        <item name="510mmIJN">510mmIJN.wav</item>
+        <item name="railgun">railgun.wav</item>
+    </string-array>
+    <string-array name="Gunnery_SecondaryPath" translatable="false">
+        <item name="sec">SecondaryTurrentsSound.wav</item>
+    </string-array>
+
+    <!-->Shell Hit<-->
+    <string-array name="ShellHitPath">
+        <item name="battleship">Battleship</item>
+        <item name="carrier">Carrier</item>
+        <item name="cruiser">Cruiser</item>
+        <item name="destroyer">Destroyer</item>
+        <item name="critical">Critical</item>
+        <item name="ocean">Ocean</item>
+    </string-array>
+
+    <string name="author">Author：</string>
+    <string name="project_type">Project Type：</string>
+    <string name="mod_pack_name">Mod Pack Name：</string>
+    <string name="mod_info">Mod Info：</string>
+    <string name="mod_version">Mod Version：if you\'re keep updating your mods,version of latest modpack should higher than previous one</string>
+    <string name="preview">Preview(Optional)：</string>
+    <string name="delete_project_after_build">Delete project after build</string>
+    <string name="running">Running…</string>
+
+</resources>

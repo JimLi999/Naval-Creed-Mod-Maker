@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/JimLi/AndroidStudioProjects/NC Mod Maker/app/src/main/res/layout-land/activity_main.xml" value="0.2945326278659612" />
+        <entry key="..\:/Users/JimLi/AndroidStudioProjects/NC Mod Maker/app/src/main/res/layout/activity_main.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/drawable/dummybg.xml" value="0.3640625" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/drawable/dummybg_dark.xml" value="0.3640625" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/layout-land/activity_editing.xml" value="0.2945326278659612" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/layout/activity_captain_voice.xml" value="0.5" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/layout/activity_editing.xml" value="0.5" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/layout/activity_gun_sound.xml" value="0.33" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/layout/activity_prim_sfx.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/layout/get_project_name.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/layout/loading_progress.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/jam91/AndroidStudioProjects/NC Mod Maker/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3640625" />
+      </map>
+    </option>
+  </component>
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="android.annotation.SuppressLint" />
+    </list>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
