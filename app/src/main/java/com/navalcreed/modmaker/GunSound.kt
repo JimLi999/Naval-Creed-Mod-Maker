@@ -75,9 +75,9 @@ class GunSound : AppCompatActivity() {
 
         projectName?.let {
             FileManager.checkInfoPreview(
-                getExternalFilesDir("GunSound")!!.path,
+                getExternalFilesDir("SoundEffect_PRIM")!!.path,
                 externalCacheDir!!.path,
-                "GunSound",
+                "SoundEffect_PRIM",
                 it
             )
         }

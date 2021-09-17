@@ -156,8 +156,10 @@
         <item name="cruiser">Cruiser</item>
         <item name="destroyer">Destroyer</item>
         <item name="critical">Critical</item>
-        <item name="ocean">Ocean</item>
+        <item name="splashed">Splashed</item>
     </string-array>
+
+
 
     <string name="author">Author：</string>
     <string name="project_type">Project Type：</string>

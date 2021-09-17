@@ -180,7 +180,7 @@ class BuildModPack : AppCompatActivity() {
 
                     //Async
                     CoroutineScope(Default).launch {
-                        val originPath=getExternalFilesDir(tvProjectType!!.text as String?)?.path + "/" + tvProjectName!!.text
+                        val originPath=getExternalFilesDir(modtype)?.path + "/" + tvProjectName!!.text
                         FileManager.writeTXT(
                             jsonString,
                             File("$originPath/mod.info")

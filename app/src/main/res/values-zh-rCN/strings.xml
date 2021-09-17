@@ -73,6 +73,6 @@
         <item name="cruiser">巡洋舰</item>
         <item name="destroyer">驱逐舰</item>
         <item name="critical">严重伤害</item>
-        <item name="ocean">海洋</item>
+        <item name="splashed">落水</item>
     </string-array>
 </resources>
