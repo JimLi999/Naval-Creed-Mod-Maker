@@ -42,8 +42,8 @@
     <string name="mod_version">Mod版本：如果您需要使用mod助手的mod更新功能,请确定此版本高于您先前mod的版本</string>
     <string name="preview">Mod预览图(可选)：</string>
     <string name="delete_project_after_build">在打包完成后移除专案</string>
-    <string name="Err_01">Err:01 未输入专案名称或输入空白字元</string>
-    <string name="Err_02">Err:02 未输入Mod名称/Mod作者/Mod简介/Mod版本</string>
+    <string name="Err_01">Err: 未输入专案名称或输入空白字元</string>
+    <string name="Err_02">Err: 未输入Mod名称/Mod作者/Mod简介/Mod版本</string>
     <string name="Success">成功</string>
     <string name="running">处理中…</string>
     <string name="Yes">是</string>
@@ -74,5 +74,9 @@
         <item name="destroyer">驱逐舰</item>
         <item name="critical">严重伤害</item>
         <item name="splashed">落水</item>
+    </string-array>
+    <string-array name="PlaneDive">
+        <item name="stuka">斯图卡</item>
+        <item name="normal">其它</item>
     </string-array>
 </resources>

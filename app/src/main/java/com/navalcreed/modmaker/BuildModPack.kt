@@ -2,7 +2,6 @@ package com.navalcreed.modmaker
 
 import android.app.Activity
 import android.app.AlertDialog
-import android.app.Presentation
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -13,7 +12,6 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.GsonBuilder
-import com.google.gson.stream.JsonReader
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.Default
 import kotlinx.coroutines.Dispatchers.IO
@@ -21,7 +19,6 @@ import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
-import kotlin.concurrent.thread
 
 
 class BuildModPack : AppCompatActivity() {

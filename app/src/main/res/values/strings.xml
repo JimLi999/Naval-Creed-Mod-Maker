@@ -19,6 +19,7 @@
     <string name="get_Exception_info_head">oh no,we have some problem</string>
     <string name="get_Exception_info_feet">take screenshot and report to developer \n email:jam9112229@gmail.com</string>
 
+    <!--Button-->
     <string name="apply">Apply</string>
     <string name="Success">Success</string>
     <string name="OK">OK</string>
@@ -29,15 +30,19 @@
     <string name="select">Select</string>
     <string name="Build">Build mod pack</string>
 
+    <!--Title-->
     <string name="title_captain_voice_create">CaptainVoice</string>
     <string name="title_gun_sound_create">PrimarySound(GunSound)</string>
 
-    <string name="Err_01">Err:01 No Project Name</string>
-    <string name="Err_02">Err:02 No Pack Name/Author/Info/Version</string>
+    <!--ErrorMessage-->
+    <string name="Err_01">Err: No Project Name</string>
+    <string name="Err_02">Err: No Pack Name/Author/Info/Version</string>
 
-    <string name="des_Autopilot">Autopilot：when Autopilot is enabled,disabled or end</string>
-    <string name="des_Battlestart">Battlestart：when Battle Start</string>
-    <string name="des_Cons">"Cons：when consumables activate or deactivate
+    <!--description-->
+        <!--CaptainVoice-->
+        <string name="des_Autopilot">Autopilot：when Autopilot is enabled,disabled or end</string>
+        <string name="des_Battlestart">Battlestart：when Battle Start</string>
+        <string name="des_Cons">"Cons：when consumables activate or deactivate
         &lt;br>-AAActive：when AA activate
         &lt;br>-AAEnd：when AA deactivate
         &lt;br>-EngineBoostActive：when EngineBoost activate
@@ -49,18 +54,18 @@
         &lt;br>-ProblemSolved_Flood：when EngineBoost activate -flood
         &lt;br>-SmokeActive：when smoke generator activate
         &lt;br>-SmokeEnd：when smoke generator deactivate "</string>
-    <string name="des_CriticalFlooding">CriticalFlooding：when flooding</string>
-    <string name="des_Detection">Detection：when being spotted or spot enemy</string>
-    <string name="des_Domination">Domination：domination status,domination point status
+        <string name="des_CriticalFlooding">CriticalFlooding：when flooding</string>
+        <string name="des_Detection">Detection：when being spotted or spot enemy</string>
+        <string name="des_Domination">Domination：domination status,domination point status
         &lt;br>-Ally_Capture：Ally taken a key point
         &lt;br>-Ally_NearWin：Ally domination point above 800
         &lt;br>-Enemy_Capture：Enemy taken a key point
         &lt;br>-Enemy_NearWin：Enemy domination point above 800</string>
-    <string name="des_DoubleKill">DoubleKill：when double-bang</string>
-    <string name="des_Fire">Fire：when ship on fire</string>
-    <string name="des_FriendlyHit">FriendlyHit：when hit ally</string>
-    <string name="des_FirstKill">FirstKill：First Blood</string>
-    <string name="des_HitAndKill">"HitAndKill：when destroy or good hits
+        <string name="des_DoubleKill">DoubleKill：when double-bang</string>
+        <string name="des_Fire">Fire：when ship on fire</string>
+        <string name="des_FriendlyHit">FriendlyHit：when hit ally</string>
+        <string name="des_FirstKill">FirstKill：First Blood</string>
+        <string name="des_HitAndKill">"HitAndKill：when destroy or good hits
         &lt;br>-DestroyAlly：Destroy Ally ships
         &lt;br>&#8212;AirCarrier：Destroy Ally Carrier
         &lt;br>&#8212;Battleship：Destroy Ally Battleship
@@ -72,19 +77,19 @@
         &lt;br>&#8212;Cruiser：Destroy Enemy Cruiser
         &lt;br>&#8212;Destroyer：Destroy Enemy Destroyer
         &lt;br>-GoodHit：Citadel or torpedo hit "</string>
-    <string name="des_LastHope">LastHope：when being the last one of team</string>
-    <string name="des_ModuleDisable">ModuleDisable：when module been destroyed or disabled
+        <string name="des_LastHope">LastHope：when being the last one of team</string>
+        <string name="des_ModuleDisable">ModuleDisable：when module been destroyed or disabled
         &lt;br>-Engine：engine disabled
         &lt;br>-MainGun：main battery destroyed or disabled
         &lt;br>&#8212;Crit：main battery disabled
         &lt;br>&#8212;Die：main battery destroyed
         &lt;br>-StearingGear：steering gear disabled
         &lt;br>-TorpedoTube：torpedo tube destroyed or disabled</string>
-    <string name="des_PlaneGroupId">"PlaneGroupId：plane squadron id
+        <string name="des_PlaneGroupId">"PlaneGroupId：plane squadron id
         &lt;br>-DiveBomber：dive bomber squadron
         &lt;br>-Fighter：fighter squadron
         &lt;br>-TorpedoBomber：torpedo bomber squadron"</string>
-    <string name="des_PlaneState">PlaneState：squadron status
+        <string name="des_PlaneState">PlaneState：squadron status
         &lt;br>-DiveBomber：dive bomber squadron
         &lt;br>-Fighter：fighter squadron
         &lt;br>-TorpedoBomber：torpedo bomber squadron
@@ -96,9 +101,11 @@
         &lt;br>&#8212;Ready：squadron is ready for take off
         &lt;br>&#8212;TangoDown：squadron shot down enemy
         &lt;br>&#8212;UnderAttack：squadron is under attack</string>
-    <string name="des_TeamKillPunishment">TeamKillPunishment：team kill punishment alert</string>
+        <string name="des_TeamKillPunishment">TeamKillPunishment：team kill punishment alert</string>
 
-    <!-->List<-->
+        <!--PrimarySound (GunSound)-->
+
+    <!--List-->
     <string-array name="GSPath">
         <item name="AntiAircraft">Anti Aircraft</item>
         <item name="Gunnery">Gunnery</item>
@@ -108,7 +115,7 @@
         <item name="PlaneDive">Plane Dive</item>
     </string-array>
 
-    <!-->Anti Aircraft<-->
+    <!--Anti Aircraft-->
     <string-array name="AAPath">
         <item name="MediumAndShortRange">Medium and ShortRange</item>
         <item name="LongRange">Long Range</item>
@@ -123,7 +130,7 @@
         <item name="antiairgun">antiairgun.wav</item>
     </string-array>
 
-    <!-->Gunnery<-->
+    <!--Gunnery-->
     <string-array name="GunneryPath">
         <item name="main">Main Battery</item>
         <item name="sec">Secondary</item>
@@ -149,7 +156,7 @@
         <item name="sec">SecondaryTurrentsSound.wav</item>
     </string-array>
 
-    <!-->Shell Hit<-->
+    <!--Shell Hit-->
     <string-array name="ShellHitPath">
         <item name="battleship">Battleship</item>
         <item name="carrier">Carrier</item>
@@ -157,6 +164,65 @@
         <item name="destroyer">Destroyer</item>
         <item name="critical">Critical</item>
         <item name="splashed">Splashed</item>
+    </string-array>
+    <string-array name="ShellHit_Battleship" translatable="false">
+        <item>bb_behit1.wav</item>
+        <item>bb_behit2.wav</item>
+        <item>bb_behit3.wav</item>
+    </string-array>
+    <string-array name="ShellHit_Carrier" translatable="false">
+        <item>cv_behit1.wav</item>
+        <item>cv_behit2.wav</item>
+        <item>cv_behit3.wav</item>
+    </string-array>
+    <string-array name="ShellHit_Cruiser" translatable="false">
+        <item>cl_behit1.wav</item>
+        <item>cl_behit2.wav</item>
+        <item>cl_behit3.wav</item>
+    </string-array>
+    <string-array name="ShellHit_Destroyer" translatable="false">
+        <item>dd_behit1.wav</item>
+        <item>dd_behit2.wav</item>
+        <item>dd_behit3.wav</item>
+    </string-array>
+    <string-array name="ShellHit_Critical" translatable="false">
+        <item>behit_heavy.wav</item>
+    </string-array>
+    <string-array name="ShellHit_Splashed" translatable="false">
+        <item>waterfall_small.wav</item>
+        <item>waterfall_middle.wav</item>
+        <item>waterfall_big.wav</item>
+        <item>waterfall_true.wav</item>
+    </string-array>
+
+    <!--Torpedo Launch-->
+    <string-array name="torpedo_launch" translatable="false">
+        <item>torpedo_launch_457.wav</item>
+        <item>torpedo_launch_533.wav</item>
+        <item>torpedo_launch_610.wav</item>
+    </string-array>
+
+    <!--Torpedo Hit-->
+    <string-array name="torpedo_hit" translatable="false">
+        <item>torpedohit1.wav</item>
+        <item>torpedohit2.wav</item>
+    </string-array>
+
+    <!--Plane Dive-->
+    <string-array name="PlaneDive">
+        <item name="stuka">Stuka</item>
+        <item name="normal">Others</item>
+    </string-array>
+    <string-array name="PlaneDive_Stuka" translatable="false">
+        <item name="stuka">stuka01.wav</item>
+        <item name="normal">stuka02.wav</item>
+        <item name="stuka">stuka03.wav</item>
+        <item name="normal">stuka04.wav</item>
+        <item name="stuka">stuka05.wav</item>
+
+    </string-array>
+    <string-array name="PlaneDive_Others" translatable="false">
+        <item name="normal">normaldive.wav</item>
     </string-array>
 
 
@@ -168,6 +234,6 @@
     <string name="mod_version">Mod Version：if you\'re keep updating your mods,version of latest modpack should higher than previous one</string>
     <string name="preview">Preview(Optional)：</string>
     <string name="delete_project_after_build">Delete project after build</string>
-    <string name="running">Running…</string>
+    <string name="running">Processing…</string>
 
 </resources>
