@@ -12,7 +12,6 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import kotlin.system.exitProcess
 
 private const val REQUEST_EXTERNAL_STORAGE = 1
 private val PERMISSIONS_STORAGE = arrayOf(
@@ -90,7 +89,8 @@ class MainActivity : AppCompatActivity() {
                             intent=Intent(applicationContext,CaptainVoice::class.java)
                         }
                         1 -> {
-                            intent=Intent(applicationContext,GunSound::class.java)
+                            //intent=Intent(applicationContext,GunSound::class.java)
+                            intent=Intent(applicationContext,Sound_PRIM::class.java)
                         }
                     }
                     intent!!.putExtra("ProjectName", editText.text.toString())
