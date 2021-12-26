@@ -9,7 +9,7 @@ import android.util.Log
 import kotlin.math.pow
 
 object GetFileFromUri {
-    @SuppressLint("Recycle")
+    @SuppressLint("Recycle", "Range")
     fun name(context: Context, uri: Uri?): String? {
         val cursor: Cursor? = context.contentResolver.query(uri!!, null, null, null, null, null)
         try {
