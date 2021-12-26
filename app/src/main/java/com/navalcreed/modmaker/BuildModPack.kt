@@ -1,5 +1,6 @@
 package com.navalcreed.modmaker
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
@@ -128,6 +129,7 @@ class BuildModPack : AppCompatActivity() {
 
 
     }
+    @SuppressLint("InflateParams")
     private val startForResultFile =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
             if (result.resultCode == Activity.RESULT_OK) {
@@ -167,7 +169,7 @@ class BuildModPack : AppCompatActivity() {
 
                     val builder1 = AlertDialog.Builder(this)
                     val inflater = layoutInflater
-                    builder1.setTitle(getString(R.string.get_project_name))
+                    builder1.setTitle(getString(R.string.running))
                     val dialogLayout = inflater.inflate(R.layout.loading_progress, null)
                     builder1.setView(dialogLayout)
                     val deleteAfterBuild=checkDeleteAfterBuild!!.isChecked
@@ -184,7 +186,10 @@ class BuildModPack : AppCompatActivity() {
                         )
                         when(modTypeInt){
                             1->{
-
+                                ZipManager.zip("$originPath/", filePath,
+                                    "$name.ncmod",
+                                    false
+                                )
                             }
                             else->{
                                 ZipManager.zip("$originPath/", filePath,
@@ -253,7 +258,7 @@ class BuildModPack : AppCompatActivity() {
     }
     private suspend fun copyPicfile(filePath:String){
         withContext(Default){
-            FileManager.fileCopy(filePath,getExternalFilesDir(tvProjectType!!.text as String)?.path + "/" + tvProjectName!!.text + "/mod.preview")
+            FileManager.fileCopy(filePath,getExternalFilesDir(modtype as String)?.path + "/" + tvProjectName!!.text + "/mod.preview")
         }
     }
 
