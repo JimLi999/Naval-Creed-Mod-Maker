@@ -3,6 +3,7 @@
     <string name="app_name">NC Mod Maker</string>
     <string name="title_captain_voice_create">CaptainVoice</string>
     <string name="get_project_name">Enter Project Name(Open project when exsit)</string>
+    <string name="get_project_name_hint">enter project name</string>
     <string name="project_name">Project：</string>
     <string name="des_Autopilot">Autopilot：when Autopilot is enabled,disabled or end</string>
     <string name="choose_project">Choose Project</string>
@@ -42,8 +43,8 @@
     <string name="mod_version">Mod Version：if you\'re keep updating your mods,version of the latest modpack should higher than previous one</string>
     <string name="preview">Preview(Optional)：</string>
     <string name="delete_project_after_build">Delete project after build</string>
-    <string name="Err_01">Err: No Project Name</string>
-    <string name="Err_02">Err: No Pack name/Author/Info/Version</string>
+    <string name="Err_NPN">No Project Name</string>
+    <string name="Err_NNAIV">No Pack name/Author/Info/Version</string>
     <string name="Success">Success</string>
     <string name="running">Processing…</string>
     <string name="Yes">Yes</string>

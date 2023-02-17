@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.provider.Settings
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                     ActivityCompat.checkSelfPermission(applicationContext, Manifest.permission.READ_EXTERNAL_STORAGE)
 
         if (PackageManager.PERMISSION_GRANTED!=permission) {
-            // We don't have permission so prompt the user
+            // We don't have permission so alert the user
             val builder = AlertDialog.Builder(this)
             builder.setTitle(R.string.get_Permissions_title)
             builder.setMessage(R.string.get_Permissions_info)
@@ -97,14 +98,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 else{
-                    val errBuilder = AlertDialog.Builder(this)
-                    errBuilder.setMessage(getString(R.string.get_Exception_info_head)+"\n"+getString(R.string.Err_01))
-                    errBuilder.setTitle(getString(R.string.get_Exception_title))
-                    errBuilder.setPositiveButton(R.string.OK){
-                            _, _ ->
-
-                    }
-                    errBuilder.show()
+                    Toast.makeText(applicationContext, R.string.Err_NPN, Toast.LENGTH_SHORT).show()
                 }
             }
         builder.show()

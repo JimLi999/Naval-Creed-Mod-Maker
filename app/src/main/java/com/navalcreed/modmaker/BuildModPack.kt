@@ -81,7 +81,7 @@ class BuildModPack : AppCompatActivity() {
                 val errBuilder = AlertDialog.Builder(this)
                 errBuilder.setMessage(
                     getString(R.string.get_Exception_info_head) + "\n" + getString(
-                        R.string.Err_02
+                        R.string.Err_NNAIV
                     )
                 )
                 errBuilder.setTitle(getString(R.string.get_Exception_title))

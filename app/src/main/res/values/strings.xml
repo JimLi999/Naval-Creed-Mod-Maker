@@ -3,6 +3,7 @@
 
     <string name="choose_project">Choose Project</string>
     <string name="get_project_name">Enter Project name(Open project when exist)</string>
+    <string name="get_project_name_hint">enter project name</string>
     <string name="project_name">Project：</string>
 
     <string name="file_uri">File Uri：</string>
@@ -35,8 +36,8 @@
     <string name="title_gun_sound_create">PrimarySound(GunSound)</string>
 
     <!--ErrorMessage-->
-    <string name="Err_01">Err: No Project Name</string>
-    <string name="Err_02">Err: No Pack Name/Author/Info/Version</string>
+    <string name="Err_NPN">No Project Name</string>
+    <string name="Err_NNAIV">No Pack Name/Author/Info/Version</string>
 
     <!--description-->
     <!--CaptainVoice-->

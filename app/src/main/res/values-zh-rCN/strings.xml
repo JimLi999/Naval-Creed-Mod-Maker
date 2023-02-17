@@ -3,6 +3,7 @@
     <string name="app_name">战舰联盟MOD制作器</string>
     <string name="title_captain_voice_create">舰长语音</string>
     <string name="get_project_name">输入专案名称(若专案存在将直接开启)</string>
+    <string name="get_project_name_hint">请输入名称</string>
     <string name="project_name">专案：</string>
     <string name="des_Autopilot">Autopilot：自动巡航 开启(Enabled),关闭(Disabled)或结束(End)</string>
     <string name="choose_project">选择专案</string>
@@ -42,8 +43,8 @@
     <string name="mod_version">Mod版本：如果您需要使用mod助手的mod更新功能,请确定此版本高于您先前mod的版本</string>
     <string name="preview">Mod预览图(可选)：</string>
     <string name="delete_project_after_build">在打包完成后移除专案</string>
-    <string name="Err_01">Err: 未输入专案名称或输入空白字元</string>
-    <string name="Err_02">Err: 未输入Mod名称/Mod作者/Mod简介/Mod版本</string>
+    <string name="Err_NPN">Err: 未输入专案名称或输入空白字元</string>
+    <string name="Err_NNAIV">未输入Mod名称/Mod作者/Mod简介/Mod版本</string>
     <string name="Success">成功</string>
     <string name="running">处理中…</string>
     <string name="Yes">是</string>

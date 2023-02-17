@@ -3,6 +3,7 @@
     <string name="app_name">NC Mod Maker</string>
     <string name="title_captain_voice_create">語音專案</string>
     <string name="get_project_name">輸入專案名稱(當存在時開啟專案)</string>
+    <string name="get_project_name_hint">請輸入名稱</string>
     <string name="project_name">專案：</string>
     <string name="des_Autopilot">Autopilot：自動巡航 開啟(Enabled),關閉(Disabled)或結束(End)</string>
     <string name="choose_project">選擇專案</string>
@@ -42,8 +43,8 @@
     <string name="mod_version">Mod版本：如果您需要使用mod助手的mod更新功能,請確定此版本高於您先前mod的版本</string>
     <string name="preview">Mod預覽圖(可選)：</string>
     <string name="delete_project_after_build">在打包完成後移除專案</string>
-    <string name="Err_01">Err: 未輸入專案名稱或輸入空白字元</string>
-    <string name="Err_02">Err: 未輸入Mod名稱/Mod作者/Mod簡介/Mod版本</string>
+    <string name="Err_NPN">未輸入專案名稱或輸入空白字元</string>
+    <string name="Err_NNAIV">未輸入Mod名稱/Mod作者/Mod簡介/Mod版本</string>
     <string name="Success">成功</string>
     <string name="running">處理中…</string>
     <string name="Yes">是</string>
