@@ -32,19 +32,19 @@ class CaptainVoice : AppCompatActivity() {
 
     var tvProjectName:TextView?=null
     var tvDescription:TextView?=null
-    var tvUri:TextView?=null
-    var tvName:TextView?=null
-    var tvSize:TextView?=null
+    private var tvUri:TextView?=null
+    private var tvName:TextView?=null
+    private var tvSize:TextView?=null
 
-    var projectLocation:String?=null
-    var firstSpinner:Spinner?=null
-    var secondSpinner:Spinner?=null
+    private var projectLocation:String?=null
+    private var firstSpinner:Spinner?=null
+    private var secondSpinner:Spinner?=null
     var thirdSpinner:Spinner?=null
     var fourthSpinner:Spinner?=null
 
-    var btnapply:Button?=null
-    var btnselect:Button?=null
-    var btnbuild:Button?=null
+    private var btnApply:Button?=null
+    private var btnSelect:Button?=null
+    private var btnBuild:Button?=null
 
     //String,for saving where user want .wav go
     var firstPath:String ?=""
@@ -52,12 +52,12 @@ class CaptainVoice : AppCompatActivity() {
     var thirdPath:String?=""
     var fourthPath:String?=""
 
-    var uri: Uri?=null
-    var filePath:String?=null
+    private var uri: Uri?=null
+    private var filePath:String?=null
 
     //know first spinner position to decide enable third spinner or not
-    var firstpos=0
-    var secondpos=0
+    var firstPos=0
+    var secondPos=0
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -72,7 +72,7 @@ class CaptainVoice : AppCompatActivity() {
 
         projectName?.let { FileManager.checkInfoPreview(getExternalFilesDir("CaptainVoice")!!.path,externalCacheDir!!.path,"CaptainVoice",it) }
 
-        btnapply!!.setOnClickListener{
+        btnApply!!.setOnClickListener{
             if(uri!=null)
                 try {
                     if (filePath?.let { it1 -> FileManager.fileCopy(it1,"$projectLocation/$firstPath$secondPath$thirdPath$fourthPath") } == true){
@@ -91,7 +91,7 @@ class CaptainVoice : AppCompatActivity() {
                 }
 
         }
-        btnselect!!.setOnClickListener {
+        btnSelect!!.setOnClickListener {
             val intent = Intent(Intent.ACTION_GET_CONTENT)
             intent.putExtra("android.content.extra.SHOW_ADVANCED", true)
             intent.addCategory(Intent.CATEGORY_OPENABLE)
@@ -99,7 +99,7 @@ class CaptainVoice : AppCompatActivity() {
             openActivityForResult(intent)
         }
 
-        btnbuild!!.setOnClickListener {
+        btnBuild!!.setOnClickListener {
             val intent = Intent(applicationContext,BuildModPack::class.java)
             val bundle=Bundle()
             bundle.putInt("type",PROJECT_CAPTAIN_VOICE)
@@ -122,9 +122,9 @@ class CaptainVoice : AppCompatActivity() {
         thirdSpinner = findViewById(R.id.thirdSP)
         fourthSpinner = findViewById(R.id.fourthSP)
 
-        btnapply=findViewById(R.id.btn_apply)
-        btnselect=findViewById(R.id.btn_select)
-        btnbuild=findViewById(R.id.btn_build)
+        btnApply=findViewById(R.id.btn_apply)
+        btnSelect=findViewById(R.id.btn_select)
+        btnBuild=findViewById(R.id.btn_build)
     }
 
 
@@ -134,17 +134,17 @@ class CaptainVoice : AppCompatActivity() {
         //else if()
         //get file list
         val arrayAdapter: ArrayAdapter<String>
-        var arrad = arrayOf<String>() //String[]
+        var array = arrayOf<String>() //String[]
         File(projectLocation).listFiles().sortedArrayDescending()/*force sort by name z-a*/.reversedArray()/*force reverse to a-z*/.forEach {
             val s = it.toString().split('/')
-            arrad += (s[s.size - 1])
+            array += (s[s.size - 1])
         }
         //set adapter
-        arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrad)
-//        for (element in arrad)Log.v("Array ", element) /*for debug use*/
+        arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, array)
+//        for (element in array)Log.v("Array ", element) /*for debug use*/
         firstSpinner!!.adapter = arrayAdapter
         //check spinner selection
-        firstListPosition(arrad)
+        firstListPosition(array)
     }
 
     private fun firstListPosition(array: Array<String>) {
@@ -152,7 +152,7 @@ class CaptainVoice : AppCompatActivity() {
             @RequiresApi(Build.VERSION_CODES.N)
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val first: String
-                firstpos = position
+                firstPos = position
                 try {
                     first = array[position]
                     firstPath = "$first/"
@@ -210,7 +210,9 @@ class CaptainVoice : AppCompatActivity() {
                     15 -> {
                         tvDescription!!.text = Html.fromHtml(getString(R.string.des_TeamKillPunishment), Html.FROM_HTML_MODE_LEGACY)
                     }//TeamKill Punishment
-                    else->null
+                    else-> {
+                        tvDescription!!.text = null
+                    }
                 }
             }
 
@@ -224,8 +226,8 @@ class CaptainVoice : AppCompatActivity() {
         secondSpinner!!.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val second = array[position]
-                secondpos = position
-                when (firstpos) {
+                secondPos = position
+                when (firstPos) {
                     1, 3, 6, 7, 8, 9, 11, 15 -> {
                         thirdSpinner!!.isEnabled = false
                         fourthSpinner!!.isEnabled = false
@@ -268,9 +270,9 @@ class CaptainVoice : AppCompatActivity() {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val s = array[position]
                 thirdPath=s
-                when (firstpos) {
+                when (firstPos) {
                     10 -> {
-                        when (secondpos) {
+                        when (secondPos) {
                             2 -> {
                                 fourthSpinner!!.isEnabled = false
                                 thirdPath = s
@@ -283,7 +285,7 @@ class CaptainVoice : AppCompatActivity() {
                         }
                     }
                     12 -> {
-                        when (secondpos) {
+                        when (secondPos) {
                             1 -> {
                                 fourthSpinner!!.isEnabled = true
                                 thirdPath = "$s/"
@@ -386,9 +388,9 @@ class CaptainVoice : AppCompatActivity() {
                 thirdListPosition(array)
             }
             3 -> {
-                when (firstpos) {
+                when (firstPos) {
                     10 -> {
-                        arrayAdapter = when (secondpos) {
+                        arrayAdapter = when (secondPos) {
                             2 -> {
                                 null
                             }
@@ -398,7 +400,7 @@ class CaptainVoice : AppCompatActivity() {
                         }
                     }
                     12 -> {
-                        arrayAdapter = when (secondpos) {
+                        arrayAdapter = when (secondPos) {
                             1 -> {
                                 ArrayAdapter(this, android.R.layout.simple_list_item_1, array)
                             }
@@ -421,6 +423,7 @@ class CaptainVoice : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private val startForResult = registerForActivityResult(StartActivityForResult()) {
                 result: ActivityResult ->
         if (result.resultCode == Activity.RESULT_OK) {
@@ -436,9 +439,9 @@ class CaptainVoice : AppCompatActivity() {
 
                 val temp=externalCacheDir.toString().split('/')
                 Log.e("Return", "temp: " + temp[1]+"/"+temp[2]+"/"+temp[3]+"/")
-                val  uritemp=uri!!.path!!.split(':')
-                Log.e("Return uritemp", "uritemp: " + uritemp[1])
-                filePath=temp[1]+"/"+temp[2]+"/"+temp[3]+"/"+ uritemp[1]
+                val  uriTemp=uri!!.path!!.split(':')
+                Log.e("Return uriTemp", "uriTemp: " + uriTemp[1])
+                filePath=temp[1]+"/"+temp[2]+"/"+temp[3]+"/"+ uriTemp[1]
             }
         }
     }

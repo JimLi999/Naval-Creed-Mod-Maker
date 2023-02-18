@@ -24,24 +24,24 @@ import java.io.File
 
 class BuildModPack : AppCompatActivity() {
 
-    var tvProjectName: TextView? = null
-    var tvProjectType: TextView? = null
-    var tvSize: TextView? = null
+    private var tvProjectName: TextView? = null
+    private var tvProjectType: TextView? = null
+    private var tvSize: TextView? = null
 
-    var editAuthor: EditText? = null
-    var editPackName: EditText? = null
-    var editModInfo: EditText? = null
-    var editModVersion: EditText? = null
+    private var editAuthor: EditText? = null
+    private var editPackName: EditText? = null
+    private var editModInfo: EditText? = null
+    private var editModVersion: EditText? = null
 
-    var imPreview: ImageView? = null
+    private var imPreview: ImageView? = null
 
-    var btnSelect: Button? = null
-    var btnBuild: Button? = null
+    private var btnSelect: Button? = null
+    private var btnBuild: Button? = null
 
-    var modtype: String? = null
-    var modTypeInt: Int?=null
+    private var modType: String? = null
+    private var modTypeInt: Int?=null
 
-    var checkDeleteAfterBuild: CheckBox? = null
+    private var checkDeleteAfterBuild: CheckBox? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_build_mod_pack)
@@ -56,26 +56,12 @@ class BuildModPack : AppCompatActivity() {
             1 -> getString(R.string.title_gun_sound_create)
             else -> ""
         }
-        modtype = when (modTypeInt) {
+        modType = when (modTypeInt) {
             0 -> "CaptainVoice"
             1 -> "SoundEffect_PRIM"
             else -> ""
         }
-        //bundle.getString("name")?.let {FileManager.checkCacheInfoPreview(getExternalFilesDir(modtype)!!.path,externalCacheDir!!.path,modtype!!,it) }
-        //val info=File("${getExternalFilesDir(modtype)!!.path}/${bundle.getString("name")}/mod.info")
-
-//        if(info.exists()){
-//            val jsonString = FileManager.readTXT("${getExternalFilesDir(modtype)!!.path}/${bundle.getString("name")}/mod.info")
-//            Log.e("Json",jsonString)
-//            val gsonBuilder=GsonBuilder()
-//            gsonBuilder.setPrettyPrinting()
-//            val gson=gsonBuilder
-//                .setLenient()
-//                .create()
-//            val modinfo: Modinfo = gson.fromJson(jsonString, Modinfo::class.java)
-//            Log.e("modinfo",modinfo.getAuthor().toString())
-//        }
-
+        
         btnBuild!!.setOnClickListener {
             if (checkNUll()) {
                 val errBuilder = AlertDialog.Builder(this)
@@ -147,7 +133,7 @@ class BuildModPack : AppCompatActivity() {
                             "\"author\":\"$author\",\n"+
                             "\"minSupportVer\": 5,\n"+
                             "\"modInfo\":\"$info\",\n"+
-                            "\"modType\":\"$modtype\",\n"+
+                            "\"modType\":\"$modType\",\n"+
                             "\"name\":\"$name\",\n"+
                             "\"preview\": \"\",\n"+
                             "\"hasPreview\": false,\n"+
@@ -158,14 +144,14 @@ class BuildModPack : AppCompatActivity() {
                     gsonBuilder.setPrettyPrinting()
                     val gson=gsonBuilder.create()
 
-                    val modinfo: Modinfo = gson.fromJson(jsonString, Modinfo::class.java)
-                    jsonString = gson.toJson(modinfo)
+                    val modInfo: Modinfo = gson.fromJson(jsonString, Modinfo::class.java)
+                    jsonString = gson.toJson(modInfo)
                     Log.e("Json",jsonString)
 
 
                     val temp = externalCacheDir.toString().split('/')
-                    val uritemp = uri!!.path!!.split(':')
-                    val filePath = temp[1] + "/" + temp[2] + "/" + temp[3] + "/" + uritemp[1]
+                    val uriTemp = uri!!.path!!.split(':')
+                    val filePath = temp[1] + "/" + temp[2] + "/" + temp[3] + "/" + uriTemp[1]
 
                     val builder1 = AlertDialog.Builder(this)
                     val inflater = layoutInflater
@@ -179,7 +165,7 @@ class BuildModPack : AppCompatActivity() {
 
                     //Async
                     CoroutineScope(Default).launch {
-                        val originPath=getExternalFilesDir(modtype)?.path + "/" + tvProjectName!!.text
+                        val originPath=getExternalFilesDir(modType)?.path + "/" + tvProjectName!!.text
                         FileManager.writeTXT(
                             jsonString,
                             File("$originPath/mod.info")
@@ -225,15 +211,15 @@ class BuildModPack : AppCompatActivity() {
                     Log.e("tree uri", data.toString())
 
                     val temp = externalCacheDir.toString().split('/')
-                    val uritemp = uri!!.path!!.split(':')
-                    val filePath = temp[1] + "/" + temp[2] + "/" + temp[3] + "/" + uritemp[1]
+                    val uriTemp = uri!!.path!!.split(':')
+                    val filePath = temp[1] + "/" + temp[2] + "/" + temp[3] + "/" + uriTemp[1]
                     tvSize!!.text=GetFileFromUri.size(this,uri)
 
                     //Async
                     CoroutineScope(IO).launch {
                         val bitmap=BitmapFactory.decodeFile(filePath)
                         updateImageView(bitmap)
-                        copyPicfile(filePath)
+                        copyPictureFile(filePath)
                     }
                 }
             }
@@ -256,9 +242,9 @@ class BuildModPack : AppCompatActivity() {
             imPreview!!.setImageBitmap(bitmap)
         }
     }
-    private suspend fun copyPicfile(filePath:String){
+    private suspend fun copyPictureFile(filePath:String){
         withContext(Default){
-            FileManager.fileCopy(filePath,getExternalFilesDir(modtype as String)?.path + "/" + tvProjectName!!.text + "/mod.preview")
+            FileManager.fileCopy(filePath,getExternalFilesDir(modType as String)?.path + "/" + tvProjectName!!.text + "/mod.preview")
         }
     }
 
