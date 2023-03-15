@@ -50,13 +50,13 @@ object Decompress {
                             Log.w(TAG, "Failed to create file " + f.name)
                             continue
                         }
-                        val fout = FileOutputStream(f)
+                        val fOut = FileOutputStream(f)
                         var count: Int
                         while (zin.read(buffer).also { count = it } != -1) {
-                            fout.write(buffer, 0, count)
+                            fOut.write(buffer, 0, count)
                         }
                         zin.closeEntry()
-                        fout.close()
+                        fOut.close()
                     }
                 }
             }

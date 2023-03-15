@@ -29,11 +29,11 @@ object FileManager {
     }
 
     fun deleteRecursive(fileOrDirectory: File) {
-        if (fileOrDirectory.isDirectory) fileOrDirectory.listFiles().forEach { child ->
-                deleteRecursive(
-                    child
-                )
-            }
+        if (fileOrDirectory.isDirectory) fileOrDirectory.listFiles()?.forEach { child ->
+            deleteRecursive(
+                child
+            )
+        }
         fileOrDirectory.delete()
     }
     fun writeTXT(data: String, filepath: File): Boolean {
